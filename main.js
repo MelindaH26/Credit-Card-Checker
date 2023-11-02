@@ -70,13 +70,10 @@ const findInvalidCards = (nestedArray) => {
   //new invalid array
   newInvalidCards = [];
   nestedArray.forEach((array) => {
-    //console.log(validateCred(array));
     if (!validateCred(array)) {
-      //console.log('is false');
       newInvalidCards.push(array);
     }
   });
-  //console.log(newInvalidCards);
   return newInvalidCards;
 };
 
@@ -101,7 +98,3 @@ const idInvalidCardComapnies = (nestedArray) => {
   });
   return companyArray;
 };
-
-//console.log(validateCred(valid2));
-//console.log(findInvalidCards(batch));
-//console.log(idInvalidCardComapnies(findInvalidCards(batch)));
