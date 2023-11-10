@@ -78,7 +78,9 @@ const idInvalidCardComapnies = (nestedArray) => {
       company = "Company not found";
     }
     // add companies to array only once
-    companyArray.indexOf(company) === -1 ? companyArray.push(company) : null;
+    if (companyArray.indexOf(company) === -1) {
+      companyArray.push(company)
+    }
   });
   return companyArray;
 };
